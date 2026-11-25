@@ -1,0 +1,93 @@
+{
+  "name": "LiveContainer + SideStore (Nightly)",
+  "identifier": "io.github.saki3525.livecontainer-altsource",
+  "subtitle": "The combined Nightly build of LiveContainer and SideStore.",
+  "description": "An independently maintained source for the official LiveContainer + SideStore Nightly IPA.",
+  "website": "https://github.com/LiveContainer/LiveContainer",
+  "iconURL": "https://raw.githubusercontent.com/LiveContainer/LiveContainer/main/screenshots/AppIcon1024.png",
+  "tintColor": "#0784FC",
+  "featuredApps": [
+    "com.kdt.livecontainer"
+  ],
+  "apps": [
+    {
+      "name": "LiveContainer + SideStore (Nightly)",
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "developerName": "LiveContainer Team",
+      "subtitle": "LiveContainer with SideStore built in.",
+      "localizedDescription": "Run iOS apps inside LiveContainer and use the bundled SideStore to install and refresh apps.",
+      "iconURL": "https://raw.githubusercontent.com/LiveContainer/LiveContainer/main/screenshots/AppIcon1024.png",
+      "tintColor": "#0784FC",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/LiveContainer/LiveContainer/main/screenshots/1.png"
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "application-identifier",
+          "com.apple.security.application-groups",
+          "get-task-allow",
+          "keychain-access-groups",
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.developer.healthkit.background-delivery",
+          "com.apple.developer.healthkit",
+          "com.apple.developer.healthkit.access"
+        ],
+        "privacy": {
+          "LSRequiresIPhoneOS": "The guest app is requesting for this permission.",
+          "NFCReaderUsageDescription": "The guest app is requesting for this permission.",
+          "NSAlarmKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
+          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
+          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
+          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
+          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthRequiredReadAuthorizationTypeIdentifiers": "The guest app is requesting for this permission.",
+          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
+          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationDefaultAccuracyReduced": "The guest app is requesting for this permission.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
+          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
+          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
+          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
+          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission.",
+          "SBAppUsesLocalNotifications": "The guest app is requesting for this permission.",
+          "UIApplicationSceneManifest": "The guest app is requesting for this permission."
+        }
+      },
+      "versions": [
+        {
+          "version": "3.8.14",
+          "buildVersion": "3.8.14",
+          "date": "2026-11-20T15:07:22Z",
+          "localizedDescription": "**Commit:** [b0f53e8934df325970e9b6ff52932a43b585c424](https://github.com/LiveContainer/LiveContainer/commit/b0f53e8934df325970e9b6ff52932a43b585c424)\n**Message:** fix build\n\nThis is a nightly release [created automatically with GitHub Actions workflow](https://github.com/LiveContainer/LiveContainer/actions/runs/44759628484/attempts/1).",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer%2BSideStore.ipa",
+          "size": 23997201,
+          "sha256": "d520ae1003f21afa1c38004dfd760b1b305b4df4b63ff54fb6859e836a6f5088",
+          "minOSVersion": "15.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
