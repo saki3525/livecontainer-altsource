@@ -1,0 +1,50 @@
+name: Update AltSource
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/update-source.yml
+      - altstore/generate.py
+      - altstore/test_generate.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Test generator
+        run: python -B -m unittest discover -s altstore
+
+      - name: Refresh source from Nightly
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python altstore/generate.py
+
+      - name: Commit source changes
+        run: |
+          git add -- altstore/source.json
+          if git diff --cached --quiet -- altstore/source.json; then
+            echo "source.json is already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh LiveContainer Nightly source' -- altstore/source.json
+          git push origin HEAD:main
