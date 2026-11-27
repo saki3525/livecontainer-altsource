@@ -79,11 +79,11 @@
         {
           "version": "3.8.14",
           "buildVersion": "3.8.14",
-          "date": "2026-11-20T15:07:22Z",
-          "localizedDescription": "**Commit:** [b0f53e8934df325970e9b6ff52932a43b585c424](https://github.com/LiveContainer/LiveContainer/commit/b0f53e8934df325970e9b6ff52932a43b585c424)\n**Message:** fix build\n\nThis is a nightly release [created automatically with GitHub Actions workflow](https://github.com/LiveContainer/LiveContainer/actions/runs/44759628484/attempts/1).",
+          "date": "2026-11-27T08:54:37Z",
+          "localizedDescription": "**Commit:** [f7965ef83fe281f008de180c2ac4a90f093451f9](https://github.com/LiveContainer/LiveContainer/commit/f7965ef83fe281f008de180c2ac4a90f093451f9)\n**Message:** Fix Launch App Intent open-url parameter handling\n\nThis is a nightly release [created automatically with GitHub Actions workflow](https://github.com/LiveContainer/LiveContainer/actions/runs/45969131746/attempts/1).",
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer%2BSideStore.ipa",
-          "size": 23997201,
-          "sha256": "d520ae1003f21afa1c38004dfd760b1b305b4df4b63ff54fb6859e836a6f5088",
+          "size": 23997759,
+          "sha256": "9cc00834bc7256e8f8c1923dfaf01e8aafa8d8338188378268fd82b07ad90027",
           "minOSVersion": "15.0"
         }
       ]
